@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size:15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header{
+    text-align: center;
+    margin:70px auto 0;
+    width:35%;
+}
+
+header .first{
+    color:hsl(234, 12%, 34%);
+    font-weight: 200;
+}
+
+header .second{
+    color:hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-top:-20px;
+}
+
+header p{
+    color: hsl(229, 6%, 66%);
+    font-weight:400;
+    font-size:.9em;
+    letter-spacing:-.4px;
+}
+
+.container{
+    width:80%;
+    margin:30px auto 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.center{
+    width:30%;
+}
+
+.cencard{
+    position: relative;
+    height:230px;
+    padding:20px;
+    margin-top:30px;
+    background-color: white;
+}
+.card{
+    position:relative;
+    width:30%;
+    height:230px;
+    padding:20px;
+    background-color:white;
+    padding:20px;
+}
+.card,.cencard{
+    box-shadow:0 17px 15px -8px hsla(229, 6%, 66%,.4);
+    border-radius: 6px;
+}
+.card h3,.cencard h3{   
+    color: hsl(234, 12%, 34%);
+}
+
+.card p,.cencard p{
+    color: hsl(229, 6%, 66%);
+    font-weight:400;
+    font-size:.8em;
+}
+img{
+    width: 55px;
+    height: 55px;
+}
+.card .icon,.cencard .icon{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+
+.supervisor{
+    border-top:4px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder{
+    border-top:4px solid hsl(0, 78%, 62%);
+}
+
+.calculator{
+    border-top:4px solid hsl(212, 86%, 64%);
+}
+
+.karma{
+    border-top:4px solid hsl(34, 97%, 64%);
+}
+
+
+@media screen and (max-width:375px){
+    .container{
+        display:block;
+    }
+
+    .card,.center{
+        width:100%;
+        margin-bottom:30px;
+    }
+    header{
+        width:80%;
+    }
+    header .first,.second{
+        font-size:1.5em;
+    }
+
+    header p{
+        font-size:14px;
+    }
+    
+}
+
+
+
+
